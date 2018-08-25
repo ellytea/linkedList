@@ -1,6 +1,10 @@
 body {
 	height: 100vh;
 	margin: auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	background: #455a64;
+	color: #fff;
 }
 
 img {
@@ -10,20 +14,14 @@ img {
 
 input, button {
 	display: block;
-}
-
-.wrapper {
-	margin: 0;
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	background: #455a64;
-	color: #fff;
-	height: 100%;
+	margin: auto;
 }
 
 .main {
 	background-color: #455a64;
 	font-size: ;
+	text-align: center;
+	margin: auto;
 }
 
 .cards {
@@ -34,7 +32,7 @@ input, button {
 .three, .four {
 	background-color: #fff;
 	color: #455a64;
-	height: 180px;
+	height: 140px;
 	border: #607d8b solid 1px;
 	margin: 20px;
 }
