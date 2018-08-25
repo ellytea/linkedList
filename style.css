@@ -1,0 +1,15 @@
+img {
+	width: 50px;
+	height: 50px;
+}
+
+input, button {
+	display: block;
+}
+
+.main {
+	background: #455a64;
+	color: #fff;
+	display: grid;
+	grid-template-columns: 200px;
+}
