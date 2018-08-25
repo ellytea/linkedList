@@ -1,3 +1,8 @@
+body {
+	height: 100vh;
+	margin: auto;
+}
+
 img {
 	width: 50px;
 	height: 50px;
@@ -7,9 +12,41 @@ input, button {
 	display: block;
 }
 
-.main {
+.wrapper {
+	margin: 0;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
 	background: #455a64;
 	color: #fff;
-	display: grid;
-	grid-template-columns: 200px;
+	height: 100%;
 }
+
+.main {
+	background-color: #455a64;
+	font-size: ;
+}
+
+.cards {
+	background-color: #cfd8dc;
+}
+
+.one, .two,
+.three, .four {
+	background-color: #fff;
+	color: #455a64;
+	height: 180px;
+	border: #607d8b solid 1px;
+	margin: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
