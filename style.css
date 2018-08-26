@@ -11,14 +11,18 @@ body {
 .button {
   background-color: #FFC107;
   color: #FFF;
-  font-size: 15px;
-  width: 400px;
-  height: 30px;
-  border: none;
+  font-size: 18px;
+  font-weight: 800;
+  height: 38px;
+  width: 410px;
 }
 
 .cards {
 	background: #cfd8dc;
+}
+
+.delete {
+	float: right;
 }
 
 img {
@@ -29,14 +33,15 @@ img {
 
 input {
   font-size: 24px;
+  font-weight: 300;
   margin-bottom: 40px;
   width: 400px;
-  border: none;
 }
 
 input, button {
 	display: block;
-	margin: auto;
+	border: none;
+	padding: 5px;
 }
 
 .main {
@@ -69,22 +74,22 @@ input, button {
 
 .title {
   font-size: 50px;
-  font-weight: bold;
+  font-weight: 800;
+  margin-bottom: 40px;
 }
 
-.title, .site-title,
-.url {
+.site-title, .url {
 	margin: 15px 0px;
 }
 
 .url {
   color: #607D8B;
   font-size: 20px;
+  font-weight: 300;
   text-decoration: underline;
   border-bottom: #cfd8dc solid 1px;
   padding-bottom: 20px;
 }
-
 
 
 
