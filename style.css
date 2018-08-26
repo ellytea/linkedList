@@ -5,12 +5,14 @@ body {
 	grid-template-columns: 1fr 1fr;
 	background: #455a64;
 	color: #fff;
-  font-family: 'Open Sans', sans-serif;
+  	font-family: 'Open Sans', sans-serif;
 }
 
 img {
-	width: 50px;
-	height: 50px;
+	width: 70px;
+	height: 40px;
+	margin-left: 5px;
+	margin-right: 5px;
 }
 
 input, button {
@@ -35,43 +37,45 @@ input, button {
 	height: 140px;
 	border: #607d8b solid 1px;
 	margin: 20px;
-  padding: 12px;
-  padding-left: 20px;
-  grid-template-rows: 2fr 2fr 1fr;
-  display: grid;
-  border-style: solid;
-  border-color: #607D8B;
-  border-width: 3px;
+	padding: 12px;
+	padding-left: 20px;
+	grid-template-rows: 2fr 2fr 1fr;
+	display: grid;
+	border-style: solid;
+	border-color: #607D8B;
+	border-width: 3px;
 }
 
-input{
+input {
   font-size: 20px;
-  margin: 10px;
+  margin-bottom: 40px;
   width: 400px;
 }
-.title{
+
+.title {
   font-size: 50px;
   font-weight: bold;
 }
 
-.site-title{
+.site-title {
   font-size: 24px;
   font-weight: bold;
   color: #455A64;
 }
 
-.url{
+.url {
   color: #607D8B;
   font-size: 20px;
 }
 
-.button{
+.button {
   background-color: #FFC107;
-  color: #FFFFFF;
+  color: #FFF;
+  font-size: 15px;
   width: 400px;
   margin-top: 20px;
   height: 30px;
-  }
+}
 
 
 
