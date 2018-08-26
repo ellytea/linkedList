@@ -8,11 +8,30 @@ body {
   	font-family: 'Open Sans', sans-serif;
 }
 
+.button {
+  background-color: #FFC107;
+  color: #FFF;
+  font-size: 15px;
+  width: 400px;
+  height: 30px;
+  border: none;
+}
+
+.cards {
+	background: #cfd8dc;
+}
+
 img {
 	width: 70px;
 	height: 40px;
-	margin-left: 5px;
-	margin-right: 5px;
+	margin: 0px 10px;
+}
+
+input {
+  font-size: 24px;
+  margin-bottom: 40px;
+  width: 400px;
+  border: none;
 }
 
 input, button {
@@ -21,35 +40,31 @@ input, button {
 }
 
 .main {
-	background-color: #455a64;
+	background: #455a64;
 	text-align: center;
 	margin: auto;
 }
 
-.cards {
-	background-color: #cfd8dc;
-}
-
 .one, .two,
 .three, .four {
-	background-color: #fff;
+	background: #fff;
 	color: #455a64;
-	height: 140px;
-	border: #607d8b solid 1px;
+	height: 150px;
 	margin: 20px;
-	padding: 12px;
-	padding-left: 20px;
-	grid-template-rows: 2fr 2fr 1fr;
-	display: grid;
-	border-style: solid;
-	border-color: #607D8B;
-	border-width: 3px;
+	padding: 10px 20px;
+	border: #607D8B solid 2px;
 }
 
-input {
-  font-size: 20px;
-  margin-bottom: 40px;
-  width: 400px;
+.read, .delete {
+	text-decoration: underline;
+}
+
+.site-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #455A64;
+  border-bottom: #cfd8dc solid 1px;
+  padding-bottom: 10px;
 }
 
 .title {
@@ -57,25 +72,31 @@ input {
   font-weight: bold;
 }
 
-.site-title {
-  font-size: 24px;
-  font-weight: bold;
-  color: #455A64;
+.title, .site-title,
+.url {
+	margin: 15px 0px;
 }
 
 .url {
   color: #607D8B;
   font-size: 20px;
+  text-decoration: underline;
+  border-bottom: #cfd8dc solid 1px;
+  padding-bottom: 20px;
 }
 
-.button {
-  background-color: #FFC107;
-  color: #FFF;
-  font-size: 15px;
-  width: 400px;
-  margin-top: 20px;
-  height: 30px;
-}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
