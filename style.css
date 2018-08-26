@@ -13,8 +13,10 @@ body {
   color: #FFF;
   font-size: 18px;
   font-weight: 800;
-  height: 38px;
-  width: 410px;
+}
+
+.button:hover {
+	background: #ffd773;
 }
 
 .cards {
@@ -23,6 +25,12 @@ body {
 
 .delete {
 	float: right;
+}
+
+.delete:hover, .url:hover, 
+.read:hover {
+	color: #455a64;
+	text-decoration-color: #ffc107;
 }
 
 img {
@@ -35,13 +43,15 @@ input {
   font-size: 24px;
   font-weight: 300;
   margin-bottom: 40px;
-  width: 400px;
+  box-sizing: border-box;
 }
 
 input, button {
 	display: block;
 	border: none;
 	padding: 5px;
+	width: 400px;
+	height: 38px;
 }
 
 .main {
@@ -53,7 +63,6 @@ input, button {
 .one, .two,
 .three, .four {
 	background: #fff;
-	color: #455a64;
 	height: 150px;
 	margin: 20px;
 	padding: 10px 20px;
@@ -62,6 +71,7 @@ input, button {
 
 .read, .delete {
 	text-decoration: underline;
+	color: #607d8b;
 }
 
 .site-title {
@@ -87,11 +97,10 @@ input, button {
   font-size: 20px;
   font-weight: 300;
   text-decoration: underline;
+  text-decoration-style: 1px;
   border-bottom: #cfd8dc solid 1px;
   padding-bottom: 20px;
 }
-
-
 
 
 
