@@ -5,6 +5,7 @@ body {
 	grid-template-columns: 1fr 1fr;
 	background: #455a64;
 	color: #fff;
+  font-family: 'Open Sans', sans-serif;
 }
 
 img {
@@ -19,7 +20,6 @@ input, button {
 
 .main {
 	background-color: #455a64;
-	font-size: ;
 	text-align: center;
 	margin: auto;
 }
@@ -35,14 +35,43 @@ input, button {
 	height: 140px;
 	border: #607d8b solid 1px;
 	margin: 20px;
+  padding: 12px;
+  padding-left: 20px;
+  grid-template-rows: 2fr 2fr 1fr;
+  display: grid;
+  border-style: solid;
+  border-color: #607D8B;
+  border-width: 3px;
 }
 
+input{
+  font-size: 20px;
+  margin: 10px;
+  width: 400px;
+}
+.title{
+  font-size: 50px;
+  font-weight: bold;
+}
 
+.site-title{
+  font-size: 24px;
+  font-weight: bold;
+  color: #455A64;
+}
 
+.url{
+  color: #607D8B;
+  font-size: 20px;
+}
 
-
-
-
+.button{
+  background-color: #FFC107;
+  color: #FFFFFF;
+  width: 400px;
+  margin-top: 20px;
+  height: 30px;
+  }
 
 
 
