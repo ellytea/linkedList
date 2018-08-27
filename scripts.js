@@ -9,23 +9,25 @@ var displayURL = document.querySelector('.url');
 var readBookmark = document.querySelector('.read');
 var deleteBookmark = document.querySelector('.delete');
 
-var cardContainer = document.querySelector('.cards');
+var cardContainer = document.querySelector('.cards-container');
 
 
 //Event Listeners
 createBookmark.addEventListener('click', makeBookmark);
-readBookmark.addEventListener('click', readBookmark);
-deleteBookmark.addEventListener('click', deleteBookmark);
+// readBookmark.addEventListener('click', readBookmark);
+// deleteBookmark.addEventListener('click', deleteBookmark);
 
 
 
 //functions
 function makeBookmark(event){
   event.preventDefault();
-  displayTitle.innerText = (bookmarkTitle.value);
-  displayURL.innerText = (bookmarkURL.value);
+  var newLi = document.createElement('li');
+  newLi.innerHTML = `<div class="one">
+        <p class="site-title"> ${bookmarkTitle.value}</p>
+        <p class="url"> ${bookmarkURL.value}</p>
+        <p class="read">Read<span class="delete">Delete</span></p>
+      </div>`
+  cardContainer.prepend(newLi);
 }
 
-function readBookmark(){
-
-}

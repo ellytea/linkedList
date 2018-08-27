@@ -7,7 +7,7 @@ body {
   	font-family: 'Open Sans', sans-serif;
 }
 
-.button {
+.create-bookmark{
   background-color: #FFC107;
   color: #FFF;
   font-size: 18px;
@@ -101,10 +101,9 @@ input, button {
   padding-bottom: 20px;
 }
 
-@media () {
-	.body{
-		margin: auto;
-		
+@media screen and (max-width: 750px) {
+	body{
+		grid-template-columns: 1fr;
 	}
 }
 
