@@ -1,5 +1,4 @@
 body {
-	height: 100vh;
 	margin: auto;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -102,7 +101,12 @@ input, button {
   padding-bottom: 20px;
 }
 
-
+@media () {
+	.body{
+		margin: auto;
+		
+	}
+}
 
 
 
