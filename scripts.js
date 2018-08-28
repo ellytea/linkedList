@@ -5,9 +5,8 @@ var bookmarkURL = document.querySelector('#enter-url');
 var createBookmark = document.querySelector('.create-bookmark');
 var displayTitle = document.querySelector('.site-title');
 var displayURL = document.querySelector('.url');
-// var readBookmarks = document.querySelectorAll('.read-button');
 var cardContainer = document.querySelector('.cards-container');
-// var cardCounter = document.querySelectorAll('.one');
+var numCount = document.querySelector('.num-count');
 var counter = 0;
 
 
@@ -37,8 +36,10 @@ function makeBookmark(event){
     function deleteBookmark(){
     newLi.remove();
     counter-- ;
+    numCount.innerText ='Number of Bookmarks: ' + counter;
   }
 counter++ ;
+numCount.innerText ='Number of Bookmarks: ' + counter;
 }
 
 

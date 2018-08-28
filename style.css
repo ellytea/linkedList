@@ -76,6 +76,10 @@ input, button {
 	margin: auto;
 }
 
+.num-count {
+  text-align: center;
+}
+
 .one {
 	background: #fff;
 	height: 170px;
