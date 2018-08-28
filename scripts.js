@@ -5,7 +5,7 @@ var bookmarkURL = document.querySelector('#enter-url');
 var createBookmark = document.querySelector('.create-bookmark');
 var displayTitle = document.querySelector('.site-title');
 var displayURL = document.querySelector('.url');
-var readBookmarks = document.querySelectorAll('.read-button');
+// var readBookmarks = document.querySelectorAll('.read-button');
 var cardContainer = document.querySelector('.cards-container');
 
 
@@ -38,23 +38,19 @@ function makeBookmark(event){
 }
 
 function markRead(){
-  // if (this.parentNode.classList.contains('read'))
-  this.parentNode.classList.add('read');
-  this.classList.add('read-red');
-
+  if (this.parentNode.classList.contains('read') === false){
+    this.parentNode.classList.add('read');
+    this.classList.add('read-red');
+}
+  else{
+    this.parentNode.classList.remove('read');
+    this.classList.remove('read-red');
+    }
 }
 
 
-// function markRead(e) {
-//   	e.target.classList = ['read']
-//  }
 
 
-// function checkBookmark{
-//   if (bookmarkTitle.value ==='' || bookmarkURL.value===''){
-//     showAlert()
-//   }
-// }
 
 
 
