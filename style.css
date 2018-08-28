@@ -8,6 +8,10 @@ body {
   height: 100vh;
 }
 
+a{
+  display: block;
+}
+
 .create-bookmark{
   background-color: #FFC107;
   color: #FFF;
@@ -15,9 +19,19 @@ body {
   font-weight: 800;
 }
 
-.button:hover {
+button:hover {
 	background: #ffd773;
+  cursor: pointer;
 }
+
+button:disabled {
+  background: #cfd8dc;
+}
+
+button:disabled:hover{
+  cursor: not-allowed;
+}
+
 
 .cards {
 	background: #cfd8dc;
@@ -31,7 +45,7 @@ body {
 .read-button:hover {
 	color: #455a64;
 	text-decoration-color: #ffc107;
-	/*add cursor img*/
+	cursor: pointer;
 }
 
 img {
@@ -118,7 +132,6 @@ input, button {
 		grid-template-columns: 1fr;
 	}
 }
-
 
 
 

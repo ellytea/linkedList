@@ -9,10 +9,11 @@ var displayURL = document.querySelector('.url');
 var cardContainer = document.querySelector('.cards-container');
 
 
+
 // Event Listeners
 createBookmark.addEventListener('click', makeBookmark);
-// deleteBookmark.addEventListener('click', deleteBookmark);
-
+bookmarkURL.addEventListener('keyup', blankInput);
+bookmarkTitle.addEventListener('keyup', blankInput);
 
 // functions
 function makeBookmark(event){
@@ -20,7 +21,7 @@ function makeBookmark(event){
   var newLi = document.createElement('li');
   newLi.innerHTML = `<div class="one">
         <p class="site-title"> ${bookmarkTitle.value}</p>
-        <p class="url"> ${bookmarkURL.value}</p>
+        <a href="https://${bookmarkURL.value}" target="_blank" class="url"> ${bookmarkURL.value}</a>
         <p class="read-button"> Read </p> 
         <p class="delete"> Delete </p>
       </div>`
@@ -49,7 +50,15 @@ function markRead(){
 }
 
 
-
+function blankInput(){
+  if (bookmarkURL.value ==='' || bookmarkTitle.value ==='')
+  {
+    createBookmark.disabled = true;
+  }
+  else{
+    createBookmark.disabled = false;
+  }
+}
 
 
 
