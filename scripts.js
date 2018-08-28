@@ -7,7 +7,8 @@ var displayTitle = document.querySelector('.site-title');
 var displayURL = document.querySelector('.url');
 // var readBookmarks = document.querySelectorAll('.read-button');
 var cardContainer = document.querySelector('.cards-container');
-
+// var cardCounter = document.querySelectorAll('.one');
+var counter = 0;
 
 
 // Event Listeners
@@ -35,8 +36,15 @@ function makeBookmark(event){
   deleteButton.addEventListener('click', deleteBookmark);
     function deleteBookmark(){
     newLi.remove();
+    counter-- ;
   }
+counter++ ;
 }
+
+
+
+
+
 
 function markRead(){
   if (this.parentNode.classList.contains('read') === false){
@@ -59,6 +67,8 @@ function blankInput(){
     createBookmark.disabled = false;
   }
 }
+
+
 
 
 
