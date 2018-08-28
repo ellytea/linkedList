@@ -5,6 +5,7 @@ body {
 	background: #455a64;
 	color: #fff;
   	font-family: 'Open Sans', sans-serif;
+  height: 100vh;
 }
 
 .create-bookmark{
@@ -60,23 +61,27 @@ input, button {
 	margin: auto;
 }
 
-.one, .two,
-.three, .four {
+.one {
 	background: #fff;
-	height: 150px;
+	height: 170px;
 	margin: 20px;
 	padding: 10px 20px;
 	border: #607D8B solid 2px;
 }
 
-.read {
-	color: red;
-	text-decoration: none;
-}
-
 .read-button, .delete {
 	text-decoration: underline;
 	color: #607d8b;
+  display: inline-block;
+}
+
+.read {
+  background-color: #F2F4F4;
+}
+
+.read-red{
+  color: #f05A28;
+  text-decoration: none;
 }
 
 .site-title {
