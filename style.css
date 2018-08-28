@@ -1,15 +1,16 @@
+
+a{
+  display: block;
+}
+
 body {
 	margin: auto;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	background: #455a64;
 	color: #fff;
-  	font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   height: 100vh;
-}
-
-a{
-  display: block;
 }
 
 .create-bookmark{
@@ -32,9 +33,9 @@ button:disabled:hover{
   cursor: not-allowed;
 }
 
-
 .cards {
 	background: #cfd8dc;
+  overflow: scroll;
 }
 
 .delete {
@@ -104,7 +105,6 @@ input, button {
   color: #455A64;
   border-bottom: #cfd8dc solid 1px;
   padding-bottom: 10px;
-  list-style-type: none;
 }
 
 .title {
@@ -125,6 +125,12 @@ input, button {
   text-decoration-style: 1px;
   border-bottom: #cfd8dc solid 1px;
   padding-bottom: 20px;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+  list-style-position: inside;
 }
 
 @media screen and (max-width: 750px) {
