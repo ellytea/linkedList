@@ -27,9 +27,10 @@ body {
 }
 
 .delete:hover, .url:hover, 
-.read:hover {
+.read-button:hover {
 	color: #455a64;
 	text-decoration-color: #ffc107;
+	/*add cursor img*/
 }
 
 img {
@@ -68,7 +69,12 @@ input, button {
 	border: #607D8B solid 2px;
 }
 
-.read, .delete {
+.read {
+	color: red;
+	text-decoration: none;
+}
+
+.read-button, .delete {
 	text-decoration: underline;
 	color: #607d8b;
 }
@@ -79,6 +85,7 @@ input, button {
   color: #455A64;
   border-bottom: #cfd8dc solid 1px;
   padding-bottom: 10px;
+  list-style-type: none;
 }
 
 .title {
