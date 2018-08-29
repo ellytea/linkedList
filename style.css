@@ -1,3 +1,7 @@
+/**{
+  margin: 0;
+  padding: 0;
+}*/
 
 a{
   display: block;
@@ -13,11 +17,18 @@ body {
   height: 100vh;
 }
 
-.create-bookmark{
+
+.create-bookmark, .clear-read-bookmarks{
   background-color: #FFC107;
   color: #FFF;
   font-size: 18px;
   font-weight: 800;
+}
+
+.clear-read-bookmarks{
+  margin: 16px 0px 20px 0px;
+  position: block;
+
 }
 
 button:hover {
@@ -47,6 +58,7 @@ button:disabled:hover{
 	color: #455a64;
 	text-decoration-color: #ffc107;
 	cursor: pointer;
+  font-weight: bold;
 }
 
 img {
@@ -139,12 +151,34 @@ ul {
 }
 
 @media screen and (max-width: 750px) {
-	body{
-		grid-template-columns: 1fr;
-	}
+  body{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+ .main{
+  margin: 0 auto;
+  padding: 10px;
+ }
+ body{
+  width: 100%;
+  }
+  .cards{
+  height: 100vh;
+  margin: none;
+  }
+  input, button {
+  display: block;
+  border: none;
+  padding: 5px;
+  width: 300px;
+  height: 38px;
 }
+  .title
+  {
+    font-size: 40px;
+  }
 
-
+}
 
 
 
