@@ -1,8 +1,3 @@
-/**{
-  margin: 0;
-  padding: 0;
-}*/
-
 a{
   display: block;
 }
@@ -17,7 +12,6 @@ body {
   height: 100vh;
 }
 
-
 .create-bookmark, .clear-read-bookmarks{
   background-color: #FFC107;
   color: #FFF;
@@ -28,7 +22,6 @@ body {
 .clear-read-bookmarks{
   margin: 16px 0px 20px 0px;
   position: block;
-
 }
 
 button:hover {
@@ -162,7 +155,7 @@ ul {
  body{
   width: 100%;
   }
-  .cards{
+  .cards {
   height: 100vh;
   margin: none;
   }
@@ -172,12 +165,11 @@ ul {
   padding: 5px;
   width: 300px;
   height: 38px;
-}
+  }
   .title
   {
     font-size: 40px;
   }
-
 }
 
 

@@ -1,5 +1,3 @@
-// Variables
-
 var bookmarkTitle = document.querySelector('#enter-website');
 var bookmarkURL = document.querySelector('#enter-url');
 var createBookmark = document.querySelector('.create-bookmark');
@@ -11,21 +9,15 @@ var counter = 0;
 var readCount = document.querySelector('.read-count');
 var clearReadBookmarksButton = document.querySelector('.clear-read-bookmarks');
 
-
-// Event Listeners
 createBookmark.addEventListener('click', makeBookmark);
 bookmarkURL.addEventListener('keyup', blankInput);
 bookmarkTitle.addEventListener('keyup', blankInput);
 clearReadBookmarksButton.addEventListener('click', clearBookmarks);
 
-// functions
-
 function validateURL() {
     var urlregex = /^(https?|ftp):\/\/([a-zA-Z0-9.-]+(:[a-zA-Z0-9.&%$-]+)*@)*((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[1-9][0-9]?)(\.(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[1-9]?[0-9])){3}|([a-zA-Z0-9-]+\.)*[a-zA-Z0-9-]+\.(com|edu|gov|int|mil|net|org|biz|arpa|info|name|pro|aero|coop|museum|[a-zA-Z]{2}))(:[0-9]+)*(\/($|[a-zA-Z0-9.,?'\\+&%$#=~_-]+))*$/;
     return urlregex.test(bookmarkURL.value);
 }
-
-
 
 function makeBookmark(event){
 event.preventDefault();
@@ -38,11 +30,9 @@ event.preventDefault();
         <p class="delete"> Delete </p>
       </div>`
 
- cardContainer.prepend(newLi);
-  
+ cardContainer.prepend(newLi); 
   var readButton = document.querySelector('.read-button');
   readButton.addEventListener('click', markRead);
-   
   var deleteButton = document.querySelector('.delete');
   deleteButton.addEventListener('click', deleteBookmark);
     function deleteBookmark(){
@@ -59,8 +49,7 @@ event.preventDefault();
     alert('This is not a valid URL!')
     }
   }
-
-
+  
 function markRead(){
   if (this.parentNode.classList.contains('read') === false){
     this.parentNode.classList.add('read');
