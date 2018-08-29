@@ -8,6 +8,8 @@ var displayURL = document.querySelector('.url');
 var cardContainer = document.querySelector('.cards-container');
 var numCount = document.querySelector('.num-count');
 var counter = 0;
+var readCount = document.querySelector('.read-count');
+
 
 
 // Event Listeners
@@ -37,15 +39,13 @@ function makeBookmark(event){
     newLi.remove();
     counter-- ;
     numCount.innerText ='Number of Bookmarks: ' + counter;
+    countBookmarks();
   }
-counter++ ;
-numCount.innerText ='Number of Bookmarks: ' + counter;
+  counter++ ;
+  numCount.innerText ='Number of Bookmarks: ' + counter;
+  countBookmarks();
+
 }
-
-
-
-
-
 
 function markRead(){
   if (this.parentNode.classList.contains('read') === false){
@@ -56,8 +56,8 @@ function markRead(){
     this.parentNode.classList.remove('read');
     this.classList.remove('read-red');
     }
+    countBookmarks();
 }
-
 
 function blankInput(){
   if (bookmarkURL.value ==='' || bookmarkTitle.value ==='')
@@ -69,11 +69,7 @@ function blankInput(){
   }
 }
 
-
-
-
-
-
-
-
-
+function countBookmarks(){
+  var numberOfReadBookmarks = document.querySelectorAll('.read');
+  readCount.innerText = `Bookmarks Read: ${numberOfReadBookmarks.length} Bookmarks Unread: ${counter - numberOfReadBookmarks.length}`;
+}

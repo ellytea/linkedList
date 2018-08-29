@@ -76,8 +76,9 @@ input, button {
 	margin: auto;
 }
 
-.num-count {
+.num-count, .read-count {
   text-align: center;
+  color: #455A64;
 }
 
 .one {
